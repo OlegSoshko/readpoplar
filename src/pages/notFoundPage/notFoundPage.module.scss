@@ -1,0 +1,34 @@
+.not-found-page {
+  height: inherit;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  .content {
+    display: flex;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.2);
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+
+      .title {
+        font-size: 100px;
+        line-height: 120px;
+        font-weight: 600;
+      }
+
+      .message {
+        margin-top: 20px;
+      }
+      
+      .go-home {
+        margin-top: auto;
+      }
+    }
+  }
+}

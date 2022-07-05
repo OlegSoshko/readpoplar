@@ -1,0 +1,43 @@
+.communication {
+  .icon {
+    border-radius: 100%;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #ffffff;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  .messengers {
+    background: #000000;
+
+    &.active {
+      background: #35838d;
+    }
+  
+    &:hover {
+      background: #35838d;
+    }
+  }
+
+  .overlay-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    .telegramm {
+      background: #2ba0d9;
+      
+      svg {
+        transform: rotate(-45deg) translate(3px);
+      }
+    }
+
+    .whatsapp {
+      background: #21a013;
+    }
+  }
+}
