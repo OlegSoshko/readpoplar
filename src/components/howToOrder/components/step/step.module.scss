@@ -1,0 +1,47 @@
+@import '../../../../styles/variables.scss';
+
+.step {
+  width: 25%;
+
+  .step-block {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 20px;
+
+    .index {
+      border: 1px solid black;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-weight: 700;
+      color: $DARK_RED;
+    }
+
+    .line {
+      height: 1px;
+      position: absolute;
+      left: 40px;
+      width: calc(100% - 40px);
+      top: 50%;
+      margin: 0;
+    }
+  }
+
+  .text-block {
+    padding-right: 30px;
+
+    .title {
+      line-height: 1.1;
+      font-size: $FONT_SIZE_CARD_HEADER;
+    }
+
+    .description {
+      margin-top: 10px;
+      font-size: $FONT_SIZE_CARD_DESCRIPTION;
+    }
+  }
+}

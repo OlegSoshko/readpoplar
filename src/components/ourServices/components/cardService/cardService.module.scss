@@ -1,0 +1,35 @@
+@import '../../../../styles/variables.scss';
+
+.card-service {
+  width: 30%;
+
+  .header {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      font-size: $SIZE_CARD_HEADER;
+
+      svg {
+        font-size: inherit;
+      }
+    }
+
+    .title {
+      margin-left: 10px;
+      font-size: 24px;
+      font-weight: normal;
+      line-height: $SIZE_CARD_HEADER;
+    }
+  }
+
+  .message {
+    margin: 20px 0;
+    font-size: $FONT_SIZE_CARD_DESCRIPTION;
+  }
+
+  .link {
+    color: grey;
+    cursor: pointer;
+  }
+}

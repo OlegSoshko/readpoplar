@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.our-pluses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.our-pluses-block {
+  width: $WIDTH_CUT;
+}

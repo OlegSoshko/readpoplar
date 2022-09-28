@@ -1,25 +1,20 @@
+@import '../../styles/variables.scss';
+
 .communication {
   .icon {
     border-radius: 100%;
-    padding: 7px;
+    padding: 13px;
     cursor: pointer;
     font-size: 24px;
     color: #ffffff;
-
-    &:hover {
-      opacity: 0.7;
-    }
   }
 
   .messengers {
-    background: #000000;
+    background: $LIGHT_EMERALD;
 
-    &.active {
-      background: #35838d;
-    }
-  
+    &.active,
     &:hover {
-      background: #35838d;
+      opacity: 0.8;
     }
   }
 
@@ -29,15 +24,23 @@
     gap: 4px;
 
     .telegramm {
-      background: #2ba0d9;
-      
+      background: $TELEGRAMM_ICON_COLOR;
+
+      &:hover {
+        background: $TELEGRAMM_ICON_LIGHT_COLOR;
+      }
+
       svg {
         transform: rotate(-45deg) translate(3px);
       }
     }
 
     .whatsapp {
-      background: #21a013;
+      background: $WHATSAPP_ICON_COLOR;
+
+      &:hover {
+        background: $WHATSAPP_ICON_LIGHT_COLOR;
+      }
     }
   }
 }

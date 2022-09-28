@@ -2,26 +2,38 @@ import React from 'react';
 import { Menu as MenuAnt } from 'antd';
 
 import styles from './menu.module.scss';
-import { MENU, MENU_ENUM } from './menu.constants';
-import { useNavigate } from 'react-router-dom';
+import { MENU } from './menu.constants';
+import { useMenuNavigate } from './menu.hooks';
 
 
 export const Menu: React.FC = () => {
-  const navigation = useNavigate();
-
-  const hendleClick = (route: string) => {
-    navigation(route);
-  }
+  const { navigateTo } = useMenuNavigate();
 
   return (
-    <MenuAnt className={styles['menu']} mode="horizontal" defaultSelectedKeys={[MENU_ENUM.SERVICES]}>
+    <MenuAnt className={styles['menu']} mode="horizontal">
       {
-        Object.entries(MENU).map(([key, label]) => (
-          <MenuAnt.Item key={key} onClick={() => hendleClick(key)}>
-            {label}
+        MENU.map(({key, title, isAnchor}) => (
+          <MenuAnt.Item key={key} onClick={() => navigateTo(key, isAnchor)}>
+            {title}
           </MenuAnt.Item>
         ))
       }
     </MenuAnt>
+  )
+}
+
+export const MenuFooter: React.FC = () => {
+  const { navigateTo } = useMenuNavigate();
+
+  return (
+    <MenuAnt className={styles['menu-footer']}>
+    {
+      MENU.map(({key, title, isAnchor}) => (
+        <MenuAnt.Item key={key} onClick={() => navigateTo(key, isAnchor)}>
+          {title}
+        </MenuAnt.Item>
+      ))
+    }
+  </MenuAnt>
   )
 }

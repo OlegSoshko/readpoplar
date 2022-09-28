@@ -2,21 +2,24 @@ import React from "react";
 import {
   Routes,
   Route,
+  Navigate
 } from "react-router-dom";
 
-import { 
-  MainPage, 
+import {
+  HomePage,
+  MainPage,
   NotFoundPage,
-  ServicesPage
+
 } from '../pages';
 
 
 export const Router: React.FC = () => {
-  
+
   return (
     <Routes>
       <Route path="/" element={<MainPage />} >
-        <Route path="services" element={<ServicesPage />} />
+        <Route index element={<Navigate to='home' replace/>} />
+        <Route path="home" element={<HomePage />} />
       </Route>
       <Route path="*" element={<NotFoundPage />} />
     </Routes>

@@ -1,0 +1,29 @@
+@import '../../../../styles/variables.scss';
+
+.merch-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: $LIGHT_EMERALD;
+
+  &:hover {
+    cursor: pointer;
+    background: $BACKGROUNG_COLOR_MAIN;
+
+    .title {
+      opacity: 0.9;
+    }
+  }
+
+  .img {
+    opacity: 0.9;
+  }
+
+  .title {
+    font-size: 24px;
+    color: $EMERALD;
+    background: #ffffff;
+    width: 100%;
+    text-align: center;
+  }
+}

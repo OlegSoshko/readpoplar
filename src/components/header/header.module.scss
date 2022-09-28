@@ -1,12 +1,16 @@
 .header {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px 30px;
   display: flex;
   align-items: center;
   gap: 20px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 1;
 
   .logo {
     cursor: pointer;
+    margin: 10px 0 0 10px;
   }
 }

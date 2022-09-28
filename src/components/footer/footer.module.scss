@@ -1,3 +1,13 @@
+@import '../../styles/variables.scss';
+
 .footer {
   margin-top: auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  .content {
+    display: flex;
+    width: $WIDTH_CUT;
+  }
 }

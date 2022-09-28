@@ -1,0 +1,19 @@
+@import '../../../../styles/variables.scss';
+
+.card-intention {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    font-size: $FONT_SIZE_CARD_HEADER;
+    color: $DARK_RED;
+    border-bottom: 3px solid $DARK_RED;
+  }
+
+  .description {
+    padding: 10px;
+    font-size: $FONT_SIZE_CARD_DESCRIPTION;
+    text-align: center;
+  }
+}
