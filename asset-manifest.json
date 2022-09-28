@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/readpoplar/static/css/main.4f17fb55.css",
+    "main.js": "/readpoplar/static/js/main.0af82030.js",
+    "static/js/787.d4cca020.chunk.js": "/readpoplar/static/js/787.d4cca020.chunk.js",
+    "static/media/main-foto.png": "/readpoplar/static/media/main-foto.3a835940ded1ec828951.png",
+    "static/media/not-found.png": "/readpoplar/static/media/not-found.108c17ccbc6f4c6d4876.png",
+    "static/media/tolstovka_v_kruge-565x700.png": "/readpoplar/static/media/tolstovka_v_kruge-565x700.00f47ab1fc542a257b3b.png",
+    "static/media/longsliv_v_kruge-565x700.png": "/readpoplar/static/media/longsliv_v_kruge-565x700.5d569f7134664c0dac5d.png",
+    "static/media/svitshoty_v_kruge-565x700.png": "/readpoplar/static/media/svitshoty_v_kruge-565x700.0ce49ac448e8404095a5.png",
+    "static/media/Alkashka_v_kruge-565x700.png": "/readpoplar/static/media/Alkashka_v_kruge-565x700.bafd7e6120944e43bbad.png",
+    "static/media/polo_v_kruge-565x700.png": "/readpoplar/static/media/polo_v_kruge-565x700.11ae67de4874e50ef05f.png",
+    "static/media/futbolka_v_kruge-565x700.png": "/readpoplar/static/media/futbolka_v_kruge-565x700.8f2c71598f9831bd10e7.png",
+    "static/media/maska_v_kruge-565x700.png": "/readpoplar/static/media/maska_v_kruge-565x700.65ee92d9816eebefde07.png",
+    "static/media/fartuk_v_kruge-565x700.png": "/readpoplar/static/media/fartuk_v_kruge-565x700.1f9ba8202f6469975d64.png",
+    "index.html": "/readpoplar/index.html",
+    "main.4f17fb55.css.map": "/readpoplar/static/css/main.4f17fb55.css.map",
+    "main.0af82030.js.map": "/readpoplar/static/js/main.0af82030.js.map",
+    "787.d4cca020.chunk.js.map": "/readpoplar/static/js/787.d4cca020.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4f17fb55.css",
+    "static/js/main.0af82030.js"
+  ]
+}
