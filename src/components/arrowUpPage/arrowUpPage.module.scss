@@ -10,6 +10,7 @@
   background-color: $LIGHT_EMERALD;
   color: #ffffff;
   display: none;
+  z-index: 1000;
 
   &:hover {
     opacity: 0.7;

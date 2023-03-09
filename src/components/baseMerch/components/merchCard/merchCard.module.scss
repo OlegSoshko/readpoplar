@@ -26,4 +26,15 @@
     width: 100%;
     text-align: center;
   }
+  @media (max-width: 1080px) {
+    img {
+      height: 380px;
+    }
+  }
+
+  @media (max-width: 960px) {
+    img {
+      height: 430px;
+    }
+  }
 }

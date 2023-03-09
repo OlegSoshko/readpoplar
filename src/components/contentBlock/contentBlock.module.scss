@@ -1,11 +1,15 @@
 @import '../../styles/variables.scss';
 
 .content-block {
+  padding: 0 10px;
+
   .title {
     font-size: $FONT_SIZE_HEADER;
   }
 
   .content {
     margin-top: 20px;
+    max-width: 1080px;
+
   }
 }

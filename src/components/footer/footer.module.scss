@@ -8,6 +8,6 @@
 
   .content {
     display: flex;
-    width: $WIDTH_CUT;
+    max-width: $WIDTH_CUT;
   }
 }

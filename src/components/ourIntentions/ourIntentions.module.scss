@@ -10,13 +10,20 @@
   margin-top: 0 !important;
 
   h1 {
-    padding-bottom: 20px;
-    width: $WIDTH_CUT;
+    padding: 0 10px 20px;
+    max-width: $WIDTH_CUT;
   }
 
   .content {
-    width: $WIDTH_CUT;
+    max-width: $WIDTH_CUT;
     display: flex;
     gap: 50px;
+  }
+
+  @media (max-width: 960px) {
+    h1 {
+      font-size: 24px;
+      text-align: center;
+    }
   }
 }

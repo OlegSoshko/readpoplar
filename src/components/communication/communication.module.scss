@@ -1,6 +1,7 @@
 @import '../../styles/variables.scss';
 
 .communication {
+  z-index: 1000;
   .icon {
     border-radius: 100%;
     padding: 13px;

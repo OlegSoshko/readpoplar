@@ -4,14 +4,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: $WIDTH;
+  max-width: $WIDTH;
 
   h1 {
-    width: $WIDTH_CUT;
+    width: 100%;
   }
 
   .content {
-    width: $WIDTH_CUT;
+    width: 100%;
     display: flex;
   }
 }

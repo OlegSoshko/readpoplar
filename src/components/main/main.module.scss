@@ -2,6 +2,8 @@
   display: flex;
   width: 100%;
   margin: 0 !important;
+  max-width: 1280px;
+  position: relative;
 
   & > * {
     width: 50%;
@@ -15,12 +17,13 @@
     gap: 40px;
 
     .title {
-      font-size: 60px;
+      font-size: 55px;
       line-height: 1.1;
+      color: inherit;
     }
 
     .description {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .btn {
@@ -32,5 +35,39 @@
     background-image: url(../../images/main-foto.png);
     height: calc(100vh - 140px);
     background-position: top center;
+    background-size: cover;
+  }
+
+  @media (max-width: 1024px) {
+    .left-block .title {
+      font-size: 50px;
+    }
+    .image {
+      height: 80vh;
+    }
+  }
+
+  @media (max-width: 960px) {
+    & > * {
+      width: 100%;
+    }
+    .left-block {
+      position: absolute;
+      top: 15%;
+      bottom: 0;
+      color: #ffffff;
+      justify-content: space-between;
+      flex-direction: row;
+    }
+    .left-block .title {
+      font-size: calc(16px + 20 * (100vw / 1280));
+    }
+    .left-block .description {
+      width: 30%;
+    }
+    .image {
+      height: 60vh;
+      width: 100%;
+    }
   }
 }
