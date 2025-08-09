@@ -1,0 +1,175 @@
+@import "tailwindcss";
+
+/* Custom styles for enhanced design */
+@layer components {
+  /* Mobile menu animation */
+  .mobile-menu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .mobile-menu.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+  
+  .mobile-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Medium screen menu animation */
+  .medium-menu {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .medium-menu.hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+  }
+  
+  .medium-menu:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* Contact dropdown animation */
+  .contact-dropdown {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-dropdown.hidden {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.95);
+    pointer-events: none;
+  }
+  
+  .contact-dropdown:not(.hidden) {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  /* Custom button hover effects */
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white px-8 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+
+  /* Custom container with max-width */
+  .container {
+    @apply max-w-7xl mx-auto px-4;
+  }
+
+  /* Hero section background pattern */
+  .hero-pattern {
+    background-image: radial-gradient(circle at 25% 25%, rgba(239, 68, 68, 0.1) 0%, transparent 50%),
+                      radial-gradient(circle at 75% 75%, rgba(239, 68, 68, 0.1) 0%, transparent 50%);
+  }
+
+  /* Smooth transitions for all interactive elements */
+  * {
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #1f2937;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #dc2626;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b91c1c;
+  }
+
+  /* Alternative: Horizontal scroll navigation for medium screens */
+  .nav-scroll-container {
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
+  
+  .nav-scroll-container::-webkit-scrollbar {
+    display: none; /* Chrome, Safari and Opera */
+  }
+  
+  .nav-scroll-container .nav-items {
+    display: flex;
+    white-space: nowrap;
+    min-width: max-content;
+  }
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-fadeInDown {
+  animation: fadeInDown 0.6s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+/* Responsive typography */
+@media (max-width: 640px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+
+
+/* Custom gradient text */
+.gradient-text {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}

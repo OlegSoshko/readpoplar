@@ -1,54 +1,22 @@
 {
   "name": "readpoplar",
-  "homepage": "https://olegsoshko.github.io/readpoplar",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@ant-design/icons": "^4.7.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "antd": "^4.21.5",
-    "classnames": "^2.3.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-router-dom": "6",
-    "react-scripts": "5.0.1",
-    "sass": "^1.53.0",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
+  "version": "1.0.0",
+  "description": "Современный веб-сайт на HTML + JavaScript с использованием Tailwind CSS",
+  "main": "index.js",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OlegSoshko/readpoplar.git"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "dev": "vite",
+    "build": "rm -rf dist && vite build",
+    "preview": "vite preview",
+    "serve": "vite preview"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0"
+    "tailwindcss": "^4.1.11",
+    "@tailwindcss/vite": "^4.1.11",
+    "vite": "^5.0.0"
   }
 }
