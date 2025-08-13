@@ -1,14 +1,38 @@
 <script setup>
+	import { ref, onMounted, onUnmounted } from "vue";
+
 	const props = defineProps({ modelValue: { type: Boolean, required: true } });
 	const emit = defineEmits(["update:modelValue"]);
+
+	const dropdownRef = ref(null);
 
 	function toggle() {
 		emit("update:modelValue", !props.modelValue);
 	}
+
+	function closeDropdown() {
+		if (props.modelValue) {
+			emit("update:modelValue", false);
+		}
+	}
+
+	function handleClickOutside(event) {
+		if (dropdownRef.value && !dropdownRef.value.contains(event.target)) {
+			closeDropdown();
+		}
+	}
+
+	onMounted(() => {
+		document.addEventListener("click", handleClickOutside);
+	});
+
+	onUnmounted(() => {
+		document.removeEventListener("click", handleClickOutside);
+	});
 </script>
 
 <template>
-	<div class="hidden lg:block xl:hidden relative">
+	<div ref="dropdownRef" class="hidden lg:block xl:hidden relative">
 		<button
 			class="p-2 text-white hover:text-red-500 transition-colors cursor-pointer"
 			aria-label="Контакты"
@@ -22,8 +46,14 @@
 			</svg>
 		</button>
 
-		<nav class="absolute right-0 lg:block xl:hidden" :class="{ hidden: !modelValue }">
-			<div class="py-4 bg-gray-800 rounded-lg mt-2 flex flex-col gap-1 whitespace-nowrap">
+		<nav
+			class="absolute right-0 bg-gray-800 rounded-lg mt-2 flex flex-col gap-1 whitespace-nowrap transition-all duration-200 ease-in-out z-50"
+			:class="{
+				'opacity-100 visible translate-y-0': modelValue,
+				'opacity-0 invisible -translate-y-2 pointer-events-none': !modelValue,
+			}"
+		>
+			<div class="py-4">
 				<a
 					href="tel:+79962812888"
 					class="flex items-center space-x-2 text-white hover:text-red-500 px-4 py-2 transition-colors rounded hover:bg-gray-700"

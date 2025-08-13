@@ -13,6 +13,7 @@ export default [
 					order: ["script", "template", "style"],
 				},
 			],
+			"vue/padding-between-blocks": ["error", "always"],
 		},
 	},
 ];

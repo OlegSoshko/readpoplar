@@ -1,0 +1,7 @@
+export * from "./Header";
+export * from "./Intro";
+export * from "./Products";
+export * from "./Other";
+export * from "./SectionDivider";
+export * from "./Info";
+export * from "./About";

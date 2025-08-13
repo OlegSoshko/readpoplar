@@ -6,6 +6,9 @@ export default {
 			screens: {
 				xl: "1260px",
 			},
+			fontFamily: {
+				"pt-narrow": ['"PT Sans Narrow"', "sans-serif"],
+			},
 		},
 	},
 	plugins: [],
