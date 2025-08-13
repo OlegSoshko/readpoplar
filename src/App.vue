@@ -1,5 +1,5 @@
 <script setup>
-	import { Intro, Products, Other, Info } from "./components";
+	import { Intro, Products, Other, Info, About } from "./components";
 </script>
 
 <template>
