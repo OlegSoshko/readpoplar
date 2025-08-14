@@ -1,7 +1,7 @@
 <script setup>
 	import { Header } from "../Header";
 	import Section from "./Section.vue";
-	import { ArrowRight } from "../../icons";
+	import { ArrowRightBig } from "../../icons";
 </script>
 
 <template>
@@ -23,9 +23,9 @@
 				<hr class="h-[2px] w-1/2 border-none bg-red-700 my-4" />
 				<p class="font-montserrat text-lg">Быстрый и качественный пошив трикотажной одежды с печатью и доставкой по всей России</p>
 				<div class="flex flex-col gap-2 w-full text-lg mt-12">
-					<div class="flex items-center gap-2"><ArrowRight stroke="white" /> ПОШИВ ОТ 50 ШТУК</div>
-					<div class="flex items-center gap-2"><ArrowRight stroke="white" /> ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА</div>
-					<div class="flex items-center gap-2"><ArrowRight stroke="white" /> ПРОИЗВОДСТВО В Г. ИВАНОВО</div>
+					<div class="flex items-center gap-2"><ArrowRightBig stroke="white" /> ПОШИВ ОТ 50 ШТУК</div>
+					<div class="flex items-center gap-2"><ArrowRightBig stroke="white" /> ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА</div>
+					<div class="flex items-center gap-2"><ArrowRightBig stroke="white" /> ПРОИЗВОДСТВО В Г. ИВАНОВО</div>
 				</div>
 				<button
 					class="text-white px-9 py-5 border-2 border-white rounded-full mt-auto uppercase font-montserrat tracking-[3.9px] bg-neutral-600 cursor-pointer"

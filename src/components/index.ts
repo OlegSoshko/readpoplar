@@ -5,3 +5,4 @@ export * from "./Other";
 export * from "./SectionDivider";
 export * from "./Info";
 export * from "./About";
+export * from "./OurWorks";

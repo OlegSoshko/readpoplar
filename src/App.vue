@@ -1,5 +1,5 @@
 <script setup>
-	import { Intro, Products, Other, Info, About } from "./components";
+	import { Intro, Products, Other, Info, About, OurWorks } from "./components";
 </script>
 
 <template>
@@ -9,6 +9,7 @@
 		<Other />
 		<Info />
 		<About />
+		<OurWorks />
 	</div>
 </template>
 
