@@ -20,10 +20,16 @@
 		return [...images.slice(-items), ...images, ...images.slice(0, items)];
 	});
 
+	const getPreciseWidth = (element: HTMLElement): number => {
+		const rect = element.getBoundingClientRect();
+		return rect.width;
+	};
+
 	const move = (widthAnimation?: boolean) => {
 		if (!imagesRef.value) return;
 
-		const widthItem = imagesRef.value.firstElementChild?.clientWidth || 0;
+		const firstElement = imagesRef.value.firstElementChild as HTMLElement;
+		const widthItem = firstElement ? getPreciseWidth(firstElement) : 0;
 		const widthGap = 20 * currentIndex.value;
 		const widthTranslate = widthItem * currentIndex.value + widthGap;
 
@@ -95,7 +101,7 @@
 		</button>
 		<div class="flex overflow-hidden">
 			<div class="flex gap-5" ref="imagesRef" @transitionend="onTransitionEnd">
-				<img v-for="slide in slides" :src="slide" class="image" />
+				<img v-for="slide in slides" :src="slide" class="image rounded-lg" />
 			</div>
 		</div>
 		<button class="cursor-pointer flex items-center justify-center hover:bg-neutral-50 active:bg-neutral-100" @click="next">
