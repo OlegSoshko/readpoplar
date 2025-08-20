@@ -5,7 +5,7 @@
 <template>
 	<div>
 		<SectionDivider class="bg-white" disableHr>
-			<h3 class="font-pt-narrow text-5xl text-neutral-900">Вся продукция сертифицирована</h3>
+			<h3 class="font-pt-narrow text-5xl text-neutral-900 whitespace-nowrap">Вся продукция сертифицирована</h3>
 		</SectionDivider>
 		<div
 			class="certificates-bg bg-fixed px-15 py-25 relative before:content-[''] before:absolute before:top-0 before:left-0 before:w-full before:h-full before:bg-neutral-50/60 before:z-0"
